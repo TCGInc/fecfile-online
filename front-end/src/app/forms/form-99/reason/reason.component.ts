@@ -34,8 +34,8 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 export class ReasonComponent implements OnInit , OnDestroy{
   
   @Output() status: EventEmitter<any> = new EventEmitter<any>();
-  @ViewChild('htmlEditor', {static: false}) htmlEditor: ElementRef;
-  @ViewChild('fileInput', {static: false}) fileInput: ElementRef;
+  @ViewChild('htmlEditor') htmlEditor: ElementRef;
+  @ViewChild('fileInput') fileInput: ElementRef;
 
   public editMode: boolean;
   public reportId: number;

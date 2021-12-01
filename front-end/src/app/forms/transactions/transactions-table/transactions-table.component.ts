@@ -45,7 +45,7 @@ const transactionCategoryOptions = [];
   ] */
 })
 export class TransactionsTableComponent implements OnInit, OnDestroy {
-  @ViewChild('columnOptionsModal', {static: false})
+  @ViewChild('columnOptionsModal')
   public columnOptionsModal: ModalDirective;
 
   @Input()

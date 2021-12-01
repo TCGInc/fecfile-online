@@ -21,7 +21,7 @@ export class TrashConfirmComponent1 implements OnInit {
   @Input()
   public headerClass: string;
 
-  @ViewChild('modalParent', {static: false})
+  @ViewChild('modalParent')
   public modalParent: ConfirmModalComponent;
 
   public transactions: Array<TransactionModel>;

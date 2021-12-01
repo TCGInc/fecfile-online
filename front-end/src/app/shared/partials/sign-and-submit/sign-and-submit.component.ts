@@ -43,7 +43,7 @@ import { TypeaheadService } from './../typeahead/typeahead.service';
   encapsulation: ViewEncapsulation.None,
 })
 export class SignAndSubmitComponent implements OnInit, OnDestroy {
-  @ViewChild('content', {static: false}) content: any;
+  @ViewChild('content') content: any;
 
   @Input() formTitle: string;
   @Input() emailsOnFile: any;

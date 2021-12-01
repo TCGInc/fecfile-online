@@ -19,10 +19,10 @@ import { ImportContactsService } from '../../import-contacts-module/import-conta
   // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ImportFecFileComponent implements OnInit, OnDestroy {
-  @ViewChild('errorsModal', {static: false})
+  @ViewChild('errorsModal')
   public errorsModal: ModalDirective;
 
-  @ViewChild('noErrorslModal', {static: false})
+  @ViewChild('noErrorslModal')
   public noErrorslModal: ModalDirective;
 
   public contactErrors: Array<any>;

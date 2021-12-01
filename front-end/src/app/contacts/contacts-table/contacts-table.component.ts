@@ -46,7 +46,7 @@ import { ContactLogModel } from '../model/contactLog.model';
   ] */
 })
 export class ContactsTableComponent implements OnInit, OnDestroy {
-  @ViewChild('columnOptionsModal', {static: false})
+  @ViewChild('columnOptionsModal')
   public columnOptionsModal: ModalDirective;
 
   @Input()

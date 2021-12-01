@@ -38,7 +38,7 @@ import { ReportsMessageService } from '../service/reports-message.service';
   ] */
 })
 export class ReportdetailsComponent implements OnInit, OnDestroy {
-  @ViewChild('columnOptionsModal', {static: false})
+  @ViewChild('columnOptionsModal')
   public columnOptionsModal: ModalDirective;
 
   /*@ViewChild('trashModal')

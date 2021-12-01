@@ -21,7 +21,7 @@ import { of } from 'rxjs';
 })
 export class DashboardComponent implements OnInit {
 
-  @ViewChild('content', {static: false}) content: any;
+  @ViewChild('content') content: any;
   
   public showSideBar: boolean = true;
   public showLegalDisclaimer: boolean = false;

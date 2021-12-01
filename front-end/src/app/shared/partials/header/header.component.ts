@@ -26,7 +26,7 @@ window.Usersnap = window.Usersnap || {};
   encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent implements OnInit, OnDestroy, OnChanges {
-  @ViewChild('content', {static: false}) content: any;
+  @ViewChild('content') content: any;
   @Input() formType: string;
 
   public menuActive: boolean = false;

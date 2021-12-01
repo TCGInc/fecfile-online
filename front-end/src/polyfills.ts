@@ -66,6 +66,9 @@ import 'hammerjs/hammer';
  * APPLICATION IMPORTS
  */
 
+import '@angular/localize/init';
+
+
 // Add global to window, assigning the value of window itself.
 // For AWS issue
 // https://github.com/aws/aws-sdk-js/issues/1944

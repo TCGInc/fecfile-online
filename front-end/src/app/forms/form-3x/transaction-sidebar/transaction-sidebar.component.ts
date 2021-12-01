@@ -95,7 +95,7 @@ export class TransactionSidebarComponent implements OnInit {
     });
   }
 
-  @ViewChild('instance', {static: false}) instance: NgbTypeahead;
+  @ViewChild('instance') instance: NgbTypeahead;
   focus$ = new Subject<string>();
   click$ = new Subject<string>();
 

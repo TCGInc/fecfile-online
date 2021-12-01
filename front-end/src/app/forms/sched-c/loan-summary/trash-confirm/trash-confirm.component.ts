@@ -22,7 +22,7 @@ export class TrashConfirmComponent3 implements OnInit {
   @Input()
   public headerClass: string;
 
-  @ViewChild('modalParent', {static: false})
+  @ViewChild('modalParent')
   public modalParent: ConfirmModalComponent;
 
   public Loans: Array<LoanModel>;

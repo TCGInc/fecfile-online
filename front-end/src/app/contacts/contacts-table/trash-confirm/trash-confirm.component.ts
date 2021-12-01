@@ -22,7 +22,7 @@ export class TrashConfirmComponent2 implements OnInit {
   @Input()
   public headerClass: string;
 
-  @ViewChild('modalParent', {static: false})
+  @ViewChild('modalParent')
   public modalParent: ConfirmModalComponent;
 
   public contactss: Array<ContactModel>;
