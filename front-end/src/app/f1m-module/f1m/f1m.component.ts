@@ -21,9 +21,9 @@ import { Subject } from 'rxjs';
 export class F1mComponent implements OnInit, OnDestroy {
 
 
-  @ViewChild(F1mAffiliationComponent) affiliationComp : F1mAffiliationComponent;
-  @ViewChild(F1mQualificationComponent) qualificationComp : F1mQualificationComponent;
-  @ViewChild(SignAndSubmitComponent) signAndSubmitComp : SignAndSubmitComponent;
+  @ViewChild(F1mAffiliationComponent, {static: false}) affiliationComp : F1mAffiliationComponent;
+  @ViewChild(F1mQualificationComponent, {static: false}) qualificationComp : F1mQualificationComponent;
+  @ViewChild(SignAndSubmitComponent, {static: false}) signAndSubmitComp : SignAndSubmitComponent;
 
   public currentStep: string = 'step_1';
   public step: string = 'step_1';

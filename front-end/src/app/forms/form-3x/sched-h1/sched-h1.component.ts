@@ -25,7 +25,7 @@ export class SchedH1Component implements OnInit, OnChanges, OnDestroy {
   @Input() forceChangeDetection: Date;
   @Input() transactionData: any;
   @Output() status: EventEmitter<any> = new EventEmitter<any>();
-  @ViewChild('f') form: NgForm;
+  @ViewChild('f', {static: false}) form: NgForm;
 
   public formType = '';
   private scheduleAction: ScheduleActions = ScheduleActions.add;

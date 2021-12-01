@@ -23,10 +23,10 @@ import { CancelImportConfirmComponent } from './cancel-import-confirm/cancel-imp
   // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ImportContactsComponent implements OnInit, OnDestroy {
-  @ViewChild('errorsModal')
+  @ViewChild('errorsModal', {static: false})
   public errorsModal: ModalDirective;
 
-  @ViewChild('noErrorslModal')
+  @ViewChild('noErrorslModal', {static: false})
   public noErrorslModal: ModalDirective;
 
   public contactErrors: Array<any>;

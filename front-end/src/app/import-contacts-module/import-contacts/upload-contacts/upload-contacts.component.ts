@@ -30,7 +30,7 @@ import { DialogService } from 'src/app/shared/services/DialogService/dialog.serv
   // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UploadContactsComponent implements OnInit, OnDestroy, OnChanges {
-  @ViewChild('selectFileInput')
+  @ViewChild('selectFileInput', {static: false})
   public selectFileInput: ElementRef;
 
   @Input()

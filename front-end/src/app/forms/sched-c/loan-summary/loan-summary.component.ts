@@ -44,7 +44,7 @@ export enum loanSumarysActions {
   ] */
 })
 export class LoanSummaryComponent implements OnInit, OnDestroy {
-  @ViewChild('columnOptionsModal')
+  @ViewChild('columnOptionsModal', {static: false})
   public columnOptionsModal: ModalDirective;
 
   @Input()

@@ -21,7 +21,7 @@ import { ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 export class TypeComponent implements OnInit, OnDestroy {
 
   @Output() status: EventEmitter<any> = new EventEmitter<any>();
-  @ViewChild('mswCollapse') mswCollapse;
+  @ViewChild('mswCollapse', {static: false}) mswCollapse;
 
   public frmType: FormGroup;
   public editMode: boolean;

@@ -32,7 +32,7 @@ import { ImportFileStatusEnum } from '../import-file-status.enum';
   styleUrls: ['./import-trx-file-select.component.scss']
 })
 export class ImportTrxFileSelectComponent implements OnInit {
-  @ViewChild('selectFileInput')
+  @ViewChild('selectFileInput', {static: false})
   public selectFileInput: ElementRef;
 
   @Output()

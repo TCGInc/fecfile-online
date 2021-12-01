@@ -22,7 +22,7 @@ import { TransactionTypeService } from './transaction-type.service';
 })
 export class TransactionTypeComponent implements OnInit, OnDestroy {
 
-  @ViewChild('acc') accordion: NgbAccordion;
+  @ViewChild('acc', {static: false}) accordion: NgbAccordion;
   @Output() status: EventEmitter<any> = new EventEmitter<any>();
   @Input() selectedOptions: any = {};
   @Input() transactionCategory: string = null;

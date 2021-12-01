@@ -68,7 +68,7 @@ export class LoanpaymentComponent implements OnInit, OnDestroy {
 
 
 
-  @ViewChild('f') form: NgForm;
+  @ViewChild('f', {static: false}) form: NgForm;
 
 
 

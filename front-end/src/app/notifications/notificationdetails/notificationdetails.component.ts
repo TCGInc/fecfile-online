@@ -14,10 +14,10 @@ import { TabConfiguration } from '../notification';
   encapsulation: ViewEncapsulation.None
 })
 export class NotificationdetailsComponent implements OnInit, OnDestroy {
-  @ViewChild('notificationModal')
+  @ViewChild('notificationModal', {static: false})
   public notificationModal: ModalDirective;
 
-  @ViewChild('notificationContentContainer')
+  @ViewChild('notificationContentContainer', {static: false})
   public notificationContentContainer: ElementRef;
   
   @Input()

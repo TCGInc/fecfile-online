@@ -8,7 +8,7 @@ import { ModalHeaderClassEnum } from '../../partials/confirm-modal/confirm-modal
 })
 export class DialogService {
 
-  @ViewChild('content') modalContent;
+  @ViewChild('content', {static: false}) modalContent;
 
   constructor(
     private _modalService: NgbModal
