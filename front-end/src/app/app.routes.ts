@@ -226,7 +226,8 @@ export const AppRoutes: Routes = [
 ];
 
 export const routing = RouterModule.forRoot(AppRoutes, {
-  useHash: true,
-  enableTracing: false,
-  onSameUrlNavigation: 'reload'
+    useHash: true,
+    enableTracing: false,
+    onSameUrlNavigation: 'reload',
+    relativeLinkResolution: 'legacy'
 });
